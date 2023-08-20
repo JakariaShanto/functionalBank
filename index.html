@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2nd Bank</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+
+  </script>
+
+</head>
+
+<body>
+  <!-- balance and transection summary  -->
+  <header>
+    <h1 class="bg-slate-500 text-center text-5xl mt-9 p-8 text-orange-300">welcome to <span class="text-purple-300">funtional bank</span></h1>
+  </header>
+  <main>
+    <section>
+      <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto mt-10 text-yellow-50">
+        <div class="bg-yellow-400 p-8 rounded-xl">
+          <h4 class="text-2xl">Deposite</h4>
+          <h2 class="text-4xl">$<span id="depo-balance">0</span></h2>
+        </div>
+        <div class="bg-purple-400 p-8 rounded-xl">
+          <h4 class="text-2xl">withdraw</h4>
+          <h2 class="text-4xl">$<span id="withdraw-balance">00</span></h2>
+        </div>
+        <div class="bg-sky-400 p-8 rounded-xl">
+          <h4 class="text-2xl">Balance</h4>
+          <h2 class="text-4xl">$<span id="total-balance">1200</span></h2>
+        </div>
+      </div>
+    </section>
+    <!-- deposite and withdraw section  -->
+
+    <section class="w-3/4 mx-auto mt-6">
+      <div class="grid grid-cols-2 gap-4 ">
+        <div class="bg-red-400 text-cyan-50 p-6">
+          <h3 class="text-3xl mb-4">Your deposite</h3>
+          <input id="deposite-input" class="text-black w-3/4 px-2 py-2 rounded-lg block" type="text " placeholder="$ enter your balance">
+          <button id="deposite-btn" class="mt-5 bg-blue-400 px-3 py-1 hover:bg-sky-300 rounded text-white">Deposite</button>
+        </div>
+        <div class="bg-purple-400 text-white p-6">
+          <h3 class="text-3xl mb-4">Your withdraw</h3>
+          <input id="withdraw-input" class="text-black w-3/4 px-2 py-2 rounded-lg block" type="text " placeholder="$ enter your balance">
+          <button id="withdraw-btn" class="mt-5 bg-blue-400 px-3 py-1 hover:bg-sky-300 rounded text-white">withdraw</button>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <script src="/functional.js"></script>
+  <script src="/withreaw.js"></script>
+</body>
+
+</html>
